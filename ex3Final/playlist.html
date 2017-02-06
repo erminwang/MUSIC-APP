@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Playlist</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  </head>
+  <body>
+
+      <header>
+        <nav class="navbar-fixed-top navbar-default">
+          <ul class="nav">
+
+
+                <li id="library" class="col-xs-4 col-md-4 tab"><a href="#"><div id="libraryG" class="glyphicon glyphicon-music untab" aria-hidden="true"></div><div id="libraryText" class="blatext font-text">Library</div></a></li>
+
+                <li id="playlist" class="col-xs-4 col-md-4 tab"><a href="#"><div id="playlistG" class="glyphicon glyphicon-th-list choosentab" aria-hidden="true"></div><div id="playlistText" class="purtext font-text">Playlists</div></a></li>
+
+                <li id="search" class="col-xs-4 col-md-4 tab"><a href="#"><div id="searchG" class="glyphicon glyphicon-search untab" aria-hidden="true"></div><div id="searchText" class="blatext font-text">Search</div></a></li>
+
+
+          </ul>
+        </nav>
+      </header>
+      <div id="background">
+
+        <div id="library-body" class="page">
+
+
+            <div class="list">
+              <div class="sp2">
+                <button id="sbya" class="btn btn-default btn-xs"><h5>Sort by artist</h5></button><button id="sbyt" class="btn btn-default btn-xs"><h5>Sort by title</h5></button>
+              </div>
+              <div id="test">
+                <!--<a id="open">Open modal</a>-->
+              </div>
+
+
+              <div id="songs"></div>
+
+            </div>
+
+        </div>
+
+        <div id="playlist-body" class="page">
+
+
+            <div class="list">
+                <div class="sp">
+                  <div id="sprec1"><span class="glyphicon glyphicon-plus"></span><p class="addp">Playlist</p></div>
+                </div>
+                <br>
+                <div id="playlists"></div>
+
+            </div>
+
+        </div>
+
+        <div id="search-body" class="page">
+          <div class="sp3">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search-box" placeholder="Search">
+            </div>
+          </div>
+
+          <div id="search-result" class="inpage">
+            <div id="playlists-in-page" class="inpage"></div>
+            <div id="songs-of" class="inpage"></div>
+          </div>
+
+        </div>
+
+        <div id="inside" class="page">
+          <div class="sp2"></div>
+          <h1 id="h-one"></h1>
+          <div id="songs-in-playlist" class="inpage"></div>
+        </div>
+
+        <div id="inside-s" class="page">
+          <div class="sp2"></div>
+          <h1 id="h-one-s"></h1>
+          <div id="songs-in-playlist-s" class="inpage"></div>
+
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="overlay col-xs-6 col-md-6" id="overlay">
+        <div class="modal-content">
+          <a id="close_modal" onclick="closeModal()">&times;</a>
+          <p class="choose">Choose playlist</p>
+          <div id="modal-playlist"></div>
+        </div>
+      </div>
+
+
+      <script src="music-app.js" type="text/javascript"></script>
+
+
+  </body>
+</html>
