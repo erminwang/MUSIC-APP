@@ -1,0 +1,81 @@
+/*body {
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0.5em;
+  color: #333;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+h1, h2, h3 {
+  line-height: 1.2;
+}*/
+
+/* Selectors demo */
+/*p {
+    color: orange;
+    font-size: 12px;
+}*/
+
+/*.lists {
+    background-color: orange;
+}
+
+#playlist-list {
+    border: solid 10px grey;
+    padding: 10px;
+}*/
+
+/*.lists ul {
+    list-style: square outside none;
+}*/
+
+/* Specificity demo */
+/*div {
+    color: grey;
+}*/
+
+/*div form label {
+    color: blue;
+}*/
+
+/*div #add-new {
+    color: red;
+}*/
+
+/* Box Model demo */
+
+/*#playlist-list {
+    width: 360px;
+    padding: 20px;
+}*/
+
+/** {
+    box-sizing: border-box;
+}*/
+
+/* Positioning demo */
+/*.album-cover img {
+    width: 100px;
+    height: 100px;
+}*/
+
+/* float */
+/*.album-cover {
+    float: right;
+}
+
+/* move down to clear past right floats. */
+/*
+#competition {
+    clear: right;
+}*/
+
+/* position property */
+/*#song-list {
+    position: relative;
+}
+
+.album-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+}*/
